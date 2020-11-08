@@ -1,0 +1,721 @@
+/* -- Fonts -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+/* -- General -- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+    color: #313131;
+    height: 1000px;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+a {
+    color: #313131;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+article {
+    margin-bottom: 150px;
+}
+
+p {
+    padding: 20px 0;
+}
+
+input, textarea {
+    padding: 6px 8px;
+    border: 1px solid #555555;
+    color: #313131;
+    outline: none;
+    border-radius: 0;
+    font-size: 0.9em;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.laravel-form {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* -- Header -- */
+
+/* - Header top - */
+
+.header-top {
+    padding: 10px;
+    border-bottom: 1px solid #444444;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+.header-top>div {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 2em;
+    margin: 10px 0 30px 0;
+    font-weight: 200;
+}
+
+/* Icons */
+
+.icons {
+    margin: 0 0 55px 0;
+}
+
+.icons>div {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+}
+
+.icons img {
+    display: block;
+    width: 100%;
+}
+
+/* - Header middle - */
+
+/* Navigation menu */
+
+nav {
+    position: relative;
+}
+
+.menu-burger {
+    width: 61px;
+    height: 61px;
+    margin: -31.5px auto 0 auto;
+    border-radius: 50%;
+    border: 1px solid #444444;
+    background: white;
+    z-index: 2;
+    position: relative;
+}
+
+.menu-burger>.line, .menu-burger .line::before, .menu-burger .line::after {
+    width: 30px;
+    display: block;
+    height: 1.5px;
+    background-color: #444444;
+}
+
+.menu-burger .line {
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    position: relative;
+}
+
+.menu-burger .line::before, .menu-burger .line::after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.menu-burger .line::before {
+    top: -0.5em;
+}
+
+.menu-burger .line::after {
+    top: 0.5em;
+}
+
+.active-menu>.drop-down-trigger {
+    background-color: #94b6de;
+}
+
+.active-menu .drop-down {
+    display: block !important;
+}
+
+.nav-menu {
+    display: none;
+    width: 90%;
+    top: 0;
+    left: 5%;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    position: absolute;
+    background-color: white;
+    padding: 70px 0 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #444444;
+}
+
+.nav-menu li a {
+    outline: none;
+    padding: 20px;
+    display: inline-block;
+}
+
+/* - Header bottom - */
+
+/* Header phrase */
+
+.header-phrase {
+    font-size: 1.6em;
+    font-weight: 200;
+    padding: 100px 0 140px 0;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* User profile */
+
+.user-profile {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.user-profile>div {
+    margin: 40px 80px 40px 0;
+}
+
+.avatar {
+    max-width: 200px;
+}
+
+.avatar img {
+    border: 5px solid #dddddd;
+    border-radius: 3px;
+    margin: auto;
+}
+
+.avatar button {
+    font-size: 0.8em;
+    background: white;
+    border: 1px solid #444444;
+    padding: 10px 20px;
+    font-weight: 200;
+    outline: none;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.avatar input {
+    width: 100%;
+}
+
+.user-section-title {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 40px 0;
+    display: block;
+}
+
+.user-credentials>div {
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.user-credentials span {
+    font-weight: 500;
+}
+
+.user-credentials ul {
+    margin-bottom: 50px;
+}
+
+.avatar-control {
+    margin: 20px 0;
+}
+
+/* User area */
+
+.user-area {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.drop-down-trigger {
+    cursor: pointer;
+}
+
+.drop-down-trigger:focus, .drop-down-trigger:active, .drop-down-trigger {
+    outline: none;
+}
+
+.user-box {
+    border: 1px solid #444444;
+    padding: 20px;
+    display: inline-block;
+    width: 200px;
+}
+
+.user-area .drop-down {
+    display: none;
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-bottom: 1px solid #444444;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    background-color: white;
+}
+
+.user-area .drop-down>div {
+    padding: 20px 0;
+}
+
+.user-area .drop-down>div:first-child {
+    border-bottom: 1px solid #444444;
+}
+
+.logout-button {
+    font-size: 1em;
+    background: white;
+    border: 0;
+    font-weight: 200;
+    outline: none;
+}
+
+/* -- Main -- */
+
+main {
+    margin: 100px 0;
+}
+
+/* Section  */
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.homepage h2 {
+    text-align: center;
+    padding: 70px 0;
+}
+
+/* Post */
+
+.single-post-container .post-image {
+    margin: 40px 0;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+    overflow: none;
+    max-height: 100%;
+}
+
+.single-post-container .post-meta {
+    padding: 40px 0;
+}
+
+.blog-title h3, .blog-title h2 {
+    padding: 20px 0;
+}
+
+.post-image {
+    max-height: 250px;
+    overflow: hidden;
+    margin: 10px 0 30px 0;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+}
+
+.post-meta {
+    display: flex;
+    flex-flow: column;
+    font-weight: 500;
+}
+
+.post-meta-icon {
+    width: 22px;
+    float: left;
+    margin: 0px 6px 0 0;
+}
+
+.post-meta>div {
+    margin: 5px 15px 5px 0;
+}
+
+.read-more-button {
+    display: block;
+    margin: 20px 0;
+}
+
+.read-more-button a {
+    padding: 10px;
+    border: 1px solid #444444;
+}
+
+/* User-form */
+
+.user-form {
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    margin: auto;
+}
+
+.user-form label, .user-form label span {
+    display: block;
+}
+
+.user-form label {
+    margin: 30px 0;
+}
+
+.user-form label span {
+    padding: 5px 0;
+}
+
+.form-submit-button {
+    margin: 10px 0;
+}
+
+.form-submit-button input, .form-submit-button button {
+    border: 0;
+    padding: 10px 20px;
+    color: #ddd;
+    background-color: #313131;
+    font-size: 0.8em;
+}
+
+/* Error section */
+
+.error-section {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.error-section span {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 20px 0
+}
+
+/* Single post */
+
+.post-body {
+    padding: 5px 0 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-action-result {
+    padding: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.alert {
+    color: #b34646;
+}
+
+.success {
+    color: green;
+}
+
+.post-control-area {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1em;
+}
+
+.post-control-area span {
+    display: block;
+    text-align: center;
+}
+
+.post-control-area button {
+    border: 0;
+    background: white;
+}
+
+.post-comments {
+    text-align: center;
+}
+
+.post-comments span {
+    display: block;
+    padding: 20px;
+    font-size: 1.4em;
+}
+
+.comments>div {
+    margin: 40px 0;
+}
+
+.comment-body {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.comment-control-button {
+    border: 1px solid #444444;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.comment-meta {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.comment-meta img {
+    width: 60px;
+    margin: auto;
+}
+
+.comment-meta>div {
+    margin: 10px 0;
+}
+
+.comment-form textarea {
+    width: 100%;
+    min-height: 150px;
+}
+
+/* Pagination */
+
+.pagination {
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 3px;
+}
+
+.pagination li a, .pagination li span {
+    padding: 3px 10px;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.pagination li a:hover {
+    border: 1px solid #444444;
+}
+
+.pagination .active {
+    background-color: #313131;
+    color: #dddddd;
+    font-size: 1.1em;
+}
+
+/* Filter */
+
+.active-filter {
+    background-color: #94b6de;
+}
+
+.active-filter~aside {
+    display: block;
+}
+
+.filter {
+    position: absolute;
+    width: 80%;
+    display: none;
+    background-color: white;
+    border: 1px solid #444444;
+    padding: 20px 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.filter-button {
+    width: 50px;
+    margin: 30px auto;
+    border: 1px solid #444444;
+    padding: 10px 9px 8px 9px;
+}
+
+.filter-section-title {
+    font-size: 1.3em;
+    font-weight: 500;
+    display: block;
+    margin: 20px 0;
+}
+
+.filter-sections label {
+    display: block;
+    margin: 5px 0;
+}
+
+.filter-sections {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.filter-sections div {
+    margin: 20px 40px 20px 0;
+}
+
+.filter-submit-button {
+    margin: 40px 0 10px 0;
+    text-align: center;
+}
+
+.filter-submit-button input {
+    background-color: #444444;
+    font-size: 1.2em;
+    border: 0;
+    padding: 10px 30px;
+    color: #dddddd;
+    border-radius: 2px;
+    font-size: 0.8;
+}
+
+/* -- Foter -- */
+
+footer {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.footer-blocks {
+    margin: 40px 0 300px 0;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-block {
+    margin: 60px 60px 60px 0;
+}
+
+.footer-block span {
+    display: block;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+}
+
+/* Breakpoints */
+
+@media (min-width: 480px) {
+    section,
+    .header-phrase {
+        width: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    
+    section,
+    .header-phrase {
+        width: 60%;
+    }
+    
+    .user-form {
+        width: 80%;
+    }
+
+    .nav-menu {
+        width: 60%;
+        left: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 17px;
+    }
+
+    section,
+    .header-phrase {
+        width: 50%;
+    }
+
+    .nav-menu {
+        width: 50%;
+        left: 25%;
+    }
+
+    .user-form {
+        width: 70%;
+    }
+
+    .single-post-container .post-meta {
+        flex-flow: row;
+        margin-left: -10%;
+        width: 120%;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1200px) {
+    section,
+    .header-phrase {
+        width: 50%;
+    }
+
+    .user-form {
+        width: 60%;
+    }
+}
